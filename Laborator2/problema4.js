@@ -7,9 +7,9 @@ const rl = readline.createInterface({
 });
 
 const regexPatterns = {
-  clientInfo: /^Client: ([A-Za-z ]+), CUI: (RO[0-9]+)$/,
-  product: /^Produs: ([A-Za-z0-9 ]+), Cantitate: ([0-9]+), Pret: ([0-9]+\.[0-9]{2}), TVA: ([0-9]+)%$/,
-  total: /^Total: ([0-9]+\.[0-9]{2})$/,
+  clientInfo: /^client: ([A-Za-z ]+), CUI: (RO[0-9]+)$/,
+  product: /^produs: ([A-Za-z0-9 ]+), cantitate: ([0-9]+), pret: ([0-9]+\.[0-9]{2}), TVA: ([0-9]+)%$/,
+  total: /^total: ([0-9]+\.[0-9]{2})$/,
 };
 
 rl.question("Introduceti calea catre fisier:  ", (filePath) => {

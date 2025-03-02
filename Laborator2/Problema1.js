@@ -15,7 +15,7 @@ class ModelAutomatFinit {
   processInput(intrare) {
     let stareCurenta = this.stareInitiala;
     for (let simbol of intrare) {
-      if (!this.alphabet.includes(simbol)) {
+      if (!this.alfabet.includes(simbol)) {
         throw new Error(`simbol invalid: ${simbol}`);
       }
       stareCurenta = this.transitions[stareCurenta][simbol];
